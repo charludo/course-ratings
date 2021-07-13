@@ -1,7 +1,8 @@
 import json
+import sys
 
-INPUT_FILE_ = "../data/rating.json"
-OUTPUT_FILE = "../data/post_processed_courses.json"
+INPUT_FILE_ = sys.argv[1]
+OUTPUT_FILE = sys.argv[2]
 
 with open(INPUT_FILE_, 'r') as input_file:
     data = json.load(input_file)
